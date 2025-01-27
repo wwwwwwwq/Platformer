@@ -60,70 +60,25 @@
     <Analyzer Include="C:\unity\2022.3.44f1c1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ProPlatformer\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs" />
     <Compile Include="Assets\Script\State Machine System\Player State\PlayerStateMachine.cs" />
     <Compile Include="Assets\Script\Character\PlayerCornerCorrect.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\Effects\VfxEffect.cs" />
     <Compile Include="Assets\Script\State Machine System\Player State\The Player State\PlayerCoyoteTime.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\Core\States\NormalState.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\Core\PlayerController.Collider.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\Player.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\Configs\PlayerParams.cs" />
     <Compile Include="Assets\Script\State Machine System\Player State\The Player State\PlayerWalk.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\Core\States\DashState.cs" />
     <Compile Include="Assets\Script\Character\PlayerGroundDetector.cs" />
     <Compile Include="Assets\Script\State Machine System\Player State\The Player State\PlayerRun.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\GameInput.cs" />
     <Compile Include="Assets\Script\State Machine System\Player State\The Player State\PlayerCrouch.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\Common\Log.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\Constants.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\PostProcess\DashImpulse.cs" />
     <Compile Include="Assets\Script\State Machine System\Base\IState.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\SceneCamera.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\Level\Ground.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\Core\IEffectControl.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\Components\WallBoost.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\Core\ICamera.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\Level\Level.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\Common\Calc.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\Game.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\PostProcess\RippleEffect.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\Common\ScreenResolutionUtil.cs" />
     <Compile Include="Assets\Script\Input\PlayerInput.cs" />
     <Compile Include="Assets\Script\State Machine System\Player State\The Player State\PlayerFall.cs" />
     <Compile Include="Assets\Script\Audio\SoundEffectsPlayer.cs" />
-    <Compile Include="Assets\ProPlatformer\Plugins\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
     <Compile Include="Assets\Script\Input\PlayerInputActions.cs" />
     <Compile Include="Assets\Script\State Machine System\Player State\The Player State\PlayerIdle.cs" />
     <Compile Include="Assets\Script\Character\PlayerWallDetector.cs" />
-    <Compile Include="Assets\ProPlatformer\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\Core\States\FiniteStateMachine.cs" />
     <Compile Include="Assets\Script\State Machine System\Player State\PlayerState.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\Core\ISpriteControl.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\Effects\SceneEffectManager.cs" />
-    <Compile Include="Assets\ProPlatformer\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\Core\PlayerController.Scene.cs" />
     <Compile Include="Assets\Script\State Machine System\Base\StateMachine.cs" />
-    <Compile Include="Assets\ProPlatformer\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
     <Compile Include="Assets\Script\State Machine System\Player State\The Player State\PlayerLand.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\PlayerRenderer.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\Core\PlayerController.Gizmo.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\Effects\TrailSnapshot.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\Core\PlayerController.Renderer.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\PostProcess\PostEffectsController.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\Core\ISoundControl.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\IGameContext.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\Core\States\ClimbState.cs" />
     <Compile Include="Assets\Script\State Machine System\Player State\The Player State\PlayerClimbHop.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\Common\AssetHelper.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\Core\PlayerController.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\Effects\EffectComponent.cs" />
-    <Compile Include="Assets\ProPlatformer\Plugins\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs" />
     <Compile Include="Assets\Script\State Machine System\Player State\The Player State\PlayerJumpUp.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\Components\JumpCheck.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\Core\States\Coroutine.cs" />
-    <Compile Include="Assets\ProPlatformer\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" />
-    <Compile Include="Assets\ProPlatformer\_Scripts\Common\Ease.cs" />
     <Compile Include="Assets\Script\Character\PlayerController.cs" />
     <Compile Include="Assets\Script\State Machine System\Player State\The Player State\PlayerClimbSlip.cs" />
     <Compile Include="Assets\Script\State Machine System\Player State\The Player State\PlayerAirJump.cs" />
@@ -134,23 +89,17 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-    <None Include="Assets\ProPlatformer\Plugins\Demigiant\DOTween\DOTween.XML" />
-    <None Include="Assets\ProPlatformer\_Arts\Shaders\Player.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\ProPlatformer\Plugins\Demigiant\DOTween\DOTween.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\ProPlatformer\_Arts\Shaders\PostFXMask.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\ProPlatformer\_Arts\Shaders\PostEffects.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\ProPlatformer\Plugins\Demigiant\DOTween\readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
@@ -492,10 +441,6 @@
     </Reference>
     <Reference Include="Unity.Collections.LowLevel.ILSupport">
       <HintPath>Library\PackageCache\com.unity.collections@1.2.4\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DOTween">
-      <HintPath>Assets\ProPlatformer\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
