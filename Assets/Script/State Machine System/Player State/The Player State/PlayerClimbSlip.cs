@@ -11,14 +11,14 @@ public class PlayerClimbSlip : PlayerState
     {
         base.Enter();
 
-        //Îª²âÊÔ,Éè¶¨½øÈëÇ½±ÚÏÂ»¬Ê±¾Í¿ÉÒÔWallJump
+        //Îªï¿½ï¿½ï¿½ï¿½,ï¿½è¶¨ï¿½ï¿½ï¿½ï¿½Ç½ï¿½ï¿½ï¿½Â»ï¿½Ê±ï¿½Í¿ï¿½ï¿½ï¿½WallJump
         player.CanWallJump = true;
     }
     public override void LogicUpdate()
     {
         if(slipVFX != null) Instantiate(slipVFX, player.transform.position, Quaternion.identity);
 
-        //ÇÐ»»µ½climphop
+        //ï¿½Ð»ï¿½ï¿½ï¿½climphop
         if (input.Jump && player.CanWallJump)
         {
             stateMachine.SwitchState(typeof(PlayerClimbHop));
