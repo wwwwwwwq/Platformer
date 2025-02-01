@@ -8,8 +8,6 @@ public class PlayerFall : PlayerState
     public override void Enter()
     {
         base.Enter();
-
-        //currentSpeed = player.MoveSpeed;
     }
 
     public override void LogicUpdate()
@@ -43,7 +41,7 @@ public class PlayerFall : PlayerState
     {
         player.SetVelocityY(speedCurve.Evaluate(StateDuration));
 
-        currentSpeed = input.Run ? runSpeed : walkSpeed;
+        currentSpeed = input.Run ? player.runSpeed : player.walkSpeed;
 
         player.Move(player.IsTouchingWall ? 0 : currentSpeed);
     }

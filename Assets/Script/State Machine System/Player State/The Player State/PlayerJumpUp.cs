@@ -11,6 +11,7 @@ public class PlayerJumpUp : PlayerState
     {
         base.Enter();
 
+        currentSpeed = player.MoveSpeed;
         input.HasJumpInputBuffer = false;
         player.SetVelocityY(jumpForce);
         //player.VoicePlayer.PlayOneShot(jumpSFX);
@@ -32,7 +33,7 @@ public class PlayerJumpUp : PlayerState
 
     public override void PhysicUpdate()
     {
-        currentSpeed = input.Run ? runSpeed : walkSpeed;
+        currentSpeed = input.Run ? player.runSpeed : player.walkSpeed;
 
         player.Move(player.IsTouchingWall ? 0 : currentSpeed);
     }

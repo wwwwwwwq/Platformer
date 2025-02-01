@@ -34,6 +34,6 @@ public class PlayerCoyoteTime : PlayerState
 
     public override void PhysicUpdate()
     {
-        player.Move(runSpeed);
+        player.Move(currentSpeed);
     }
 }

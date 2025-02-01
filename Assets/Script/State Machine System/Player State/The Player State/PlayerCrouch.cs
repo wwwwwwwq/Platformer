@@ -3,6 +3,8 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Data/StateMachine/PlayerState/Crouch", fileName = "PlayerCrouch")]
 public class PlayerCrouch : PlayerState
 {
+    [SerializeField] float crouchSpeed = 3f;
+
     public override void Enter()
     {
         base.Enter();

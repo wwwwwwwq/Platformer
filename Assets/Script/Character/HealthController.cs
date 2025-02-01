@@ -3,10 +3,17 @@ using UnityEngine.UI;
 
 public class HealthController : MonoBehaviour
 {
-    [SerializeField] float currentHealth;
-    [SerializeField] float maxHealth;
+    [SerializeField] protected float currentHealth;
+    [SerializeField] protected float maxHealth;
+
+    [HideInInspector] public bool isDie = false;
 
     public Slider healthBar;
+    private void Start()
+    {
+        if (healthBar != null)
+            UpdateHealth();
+    }
 
     public void UpdateHealth()
     {
@@ -15,13 +22,25 @@ public class HealthController : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        currentHealth -= damage;
-        UpdateHealth();
+        if (currentHealth - damage <= 0)
+        {
+            currentHealth = 0;
+        }
+        else
+            currentHealth -= damage;
+        if(healthBar != null) 
+            UpdateHealth();
     }
 
     public void Heal(float heal)
     {
-        currentHealth += heal;
-        UpdateHealth();
+        if (currentHealth + heal > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+        else
+            currentHealth += heal;
+        if (healthBar != null)
+            UpdateHealth();
     }
 }

@@ -13,6 +13,7 @@ public class PlayerAirJump : PlayerState
     {
         base.Enter();
 
+        //currentSpeed = player.MoveSpeed;
         player.CanAirJump = false;
         player.SetVelocityY(jumpForce);
         //player.VoicePlayer.PlayOneShot(jumpSFX);
@@ -34,7 +35,7 @@ public class PlayerAirJump : PlayerState
 
     public override void PhysicUpdate()
     {
-        currentSpeed = input.Run ? runSpeed : walkSpeed;
+        currentSpeed = input.Run ? player.runSpeed : player.walkSpeed;
 
         player.Move(player.IsTouchingWall ? 0 : currentSpeed);
     }

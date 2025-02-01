@@ -7,8 +7,6 @@ public class PlayerWalk : PlayerState
     public override void Enter()
     {
         base.Enter();
-
-        //currentSpeed = player.MoveSpeed;
     }
 
     public override void LogicUpdate()
@@ -43,6 +41,6 @@ public class PlayerWalk : PlayerState
 
     public override void PhysicUpdate()
     {
-        player.Move(walkSpeed);
+        player.Move(player.walkSpeed);
     }
 }

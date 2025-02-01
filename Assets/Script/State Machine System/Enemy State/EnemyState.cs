@@ -10,9 +10,9 @@ public class EnemyState : ScriptableObject,IState
 
     int stateHash;
 
-    [SerializeField] protected float attackRadius = 0.1f;
-    
-    [SerializeField] protected float chaseRadius = 0.5f;
+    protected float currentSpeed;
+
+    protected EnemyController enemy;
 
     protected EnemyStateMachine stateMachine;
 
@@ -22,10 +22,11 @@ public class EnemyState : ScriptableObject,IState
 
     protected float StateDuration => Time.time - stateStartTime;
 
-    public void Initialize(EnemyStateMachine stateMachine, Animator animator)
+    public void Initialize(EnemyStateMachine stateMachine, EnemyController enemy, Animator animator)
     {
         this.stateMachine = stateMachine;
         this.animator = animator;
+        this.enemy = enemy;
     }
 
     private void OnEnable()
@@ -37,6 +38,7 @@ public class EnemyState : ScriptableObject,IState
     {
         animator.CrossFade(stateName, transitionDuration);
         stateStartTime = Time.time;
+        Debug.Log("Enemy Enter State: " + stateName);
     }
 
     public virtual void Exit()

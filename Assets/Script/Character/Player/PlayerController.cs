@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class PlayerController : HealthController
 {
-    PlayerGroundDetector groundDetector;
+    GroundDetector groundDetector;
 
-    PlayerWallDetector wallDetector;
+    WallDetector wallDetector;
 
     PlayerInput input;
 
     Rigidbody2D rb;
+
+    Animator anim;
+
+    [Header("Player Move")]
+    public float walkSpeed = 5f;
+    public  float runSpeed = 7f;
 
     [Header("Jump Corner Correct")]
     public float raycastLength = 0.7f;
@@ -26,6 +32,7 @@ public class PlayerController : HealthController
     public float maxScale = 20f;
     public AudioSource VoicePlayer { get; private set; }
 
+    public bool isHurting = false;
     public bool CanAirJump { get; set; } = true;
     public bool CanWallJump { get; set; } = true;
     public bool IsGrounded => groundDetector.IsGrounded;
@@ -36,10 +43,11 @@ public class PlayerController : HealthController
 
     private void Awake()
     {
-        groundDetector = GetComponentInChildren<PlayerGroundDetector>();
-        wallDetector = GetComponentInChildren<PlayerWallDetector>();
+        groundDetector = GetComponentInChildren<GroundDetector>();
+        wallDetector = GetComponentInChildren<WallDetector>();
         input = GetComponent<PlayerInput>();
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         VoicePlayer = GetComponentInChildren<AudioSource>();
     }
 
@@ -58,6 +66,10 @@ public class PlayerController : HealthController
         {
             CornerCorrect(rb.velocity.y);
             Debug.Log("Corner Correct");
+        }
+        if (currentHealth <= 0 && !isDie)
+        {
+            Die();
         }
     }
 
@@ -128,6 +140,24 @@ public class PlayerController : HealthController
             rb.velocity = new Vector2(rb.velocity.x, Yvelocity);
             return;
         }
+    }
+    #endregion
+
+    //受伤，死亡不用玩家状态机实现
+    #region Hurt
+    public void PlayerHurt(float damage)
+    {
+        anim.SetTrigger("Hurt");
+        TakeDamage(damage);
+    }
+    #endregion
+
+    #region Die
+    public void Die()
+    {
+        isDie = true;
+        anim.Play("Die");
+        //处理另外的逻辑，比如调出UI等
     }
     #endregion
 

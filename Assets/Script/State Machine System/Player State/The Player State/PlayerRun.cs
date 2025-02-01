@@ -4,12 +4,9 @@ using UnityEngine;
 public class PlayerRun : PlayerState
 {
     //[SerializeField] float acceleration = 5f;
-
     public override void Enter()
     {
         base.Enter();
-
-        //currentSpeed = player.MoveSpeed;
     }
 
     public override void LogicUpdate()
@@ -44,6 +41,6 @@ public class PlayerRun : PlayerState
 
     public override void PhysicUpdate()
     {
-        player.Move(runSpeed);
+        player.Move(player.runSpeed);
     }
 }

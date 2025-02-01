@@ -11,12 +11,6 @@ public class PlayerState : ScriptableObject,IState
 
     protected float currentSpeed;
 
-    protected float walkSpeed = 5f;
-
-    protected float runSpeed = 7f;
-
-    protected float crouchSpeed = 3f;
-
     protected Animator animator;
 
     protected PlayerInput input;
@@ -46,7 +40,8 @@ public class PlayerState : ScriptableObject,IState
     {
         animator.CrossFade(stateHash, transitionDuration);
         stateStartTime = Time.time;
-        Debug.Log("Enter State: " + stateName);
+        Debug.Log("Player Enter State: " + stateName);
+        Debug.Log(currentSpeed);
     }
 
     public virtual void Exit()
