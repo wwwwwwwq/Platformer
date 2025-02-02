@@ -31,7 +31,7 @@ public class PlayerLand : PlayerState
             stateMachine.SwitchState(typeof(PlayerWalk));
         }
 
-        if(IsAnimationFinished)
+        if (IsAnimationFinished)
         {
             stateMachine.SwitchState(typeof(PlayerIdle));
         }

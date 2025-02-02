@@ -61,8 +61,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\State Machine System\Player State\PlayerStateMachine.cs" />
+    <Compile Include="Assets\Script\Input\PlayerBInput.cs" />
     <Compile Include="Assets\Script\State Machine System\Player State\The Player State\PlayerCoyoteTime.cs" />
     <Compile Include="Assets\Script\Character\WallDetector.cs" />
+    <Compile Include="Assets\Script\Input\PlayerAInput.cs" />
     <Compile Include="Assets\Script\Character\Player\PlayerA\SpellManager.cs" />
     <Compile Include="Assets\Script\State Machine System\Enemy State\The Enemy State\Normal Enemy\EnemyHurt.cs" />
     <Compile Include="Assets\Script\State Machine System\Player State\The Player State\PlayerWalk.cs" />
@@ -71,8 +73,10 @@
     <Compile Include="Assets\Script\State Machine System\Player State\The Player State\PlayerAttack.cs" />
     <Compile Include="Assets\Script\State Machine System\Player State\The Player State\PlayerRun.cs" />
     <Compile Include="Assets\Script\State Machine System\Player State\The Player State\PlayerCrouch.cs" />
+    <Compile Include="Assets\Script\Character\Player\PlayerB\Defense.cs" />
     <Compile Include="Assets\Script\State Machine System\Base\IState.cs" />
     <Compile Include="Assets\Script\State Machine System\Enemy State\The Enemy State\Normal Enemy\EnemyJumpUp.cs" />
+    <Compile Include="Assets\Script\Character\Player\PlayerB\MeleeAttack.cs" />
     <Compile Include="Assets\Script\Character\Player\PlayerController.cs" />
     <Compile Include="Assets\Script\Input\PlayerInput.cs" />
     <Compile Include="Assets\Script\State Machine System\Enemy State\The Enemy State\Normal Enemy\EnemyIdle.cs" />
@@ -94,6 +98,7 @@
     <Compile Include="Assets\Script\Character\Player\PlayerA\Spell.cs" />
     <Compile Include="Assets\Script\State Machine System\Enemy State\The Enemy State\Normal Enemy\EnemyAttack.cs" />
     <Compile Include="Assets\Script\Character\Player\PlayerA\Spell\LightBallSpell.cs" />
+    <Compile Include="Assets\Script\Character\Player\PlayerB\WeaponSystem.cs" />
     <Compile Include="Assets\Script\State Machine System\Enemy State\The Enemy State\Normal Enemy\EnemyDie.cs" />
     <Compile Include="Assets\Script\State Machine System\Player State\The Player State\PlayerClimbSlip.cs" />
     <Compile Include="Assets\Script\State Machine System\Player State\The Player State\PlayerAirJump.cs" />

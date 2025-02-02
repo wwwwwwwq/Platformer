@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - FlyEnemy
+  - PlayerA
+  - PlayerB
   layers:
   - Default
   - TransparentFX
@@ -15,7 +17,7 @@ TagManager:
   - Ground
   - Wall
   - Player
-  - 
+  - Enemy
   - 
   - 
   - 

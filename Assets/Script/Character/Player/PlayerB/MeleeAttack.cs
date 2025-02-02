@@ -15,15 +15,17 @@ public class MeleeAttack : MonoBehaviour
     public LayerMask destructibleLayer;//表示可破坏物品图层
     private Vector2 AttackAreaPos;
 
-    public Rigidbody2D rb;
-    public Animator anim;
-    public SpriteRenderer sr;
+    Rigidbody2D rb;
+    Animator anim;
+    SpriteRenderer sr;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
+
+        AttackAreaPos = transform.position;
     }
 
     void MeleeAttackAnimEvent()
@@ -41,7 +43,7 @@ public class MeleeAttack : MonoBehaviour
 
         foreach (Collider2D hitCollider in enemyHitColliders)
         {
-            //hitCollider.GetComponent<Character>().TakeDamage(meleeAttackDamage );
+            hitCollider.GetComponent<EnemyController>().TakeDamage(meleeAttackDamage );
         }
     }
 

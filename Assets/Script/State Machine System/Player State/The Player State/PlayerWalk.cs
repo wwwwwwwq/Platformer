@@ -1,4 +1,5 @@
 using UnityEngine;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
 [CreateAssetMenu(menuName = "Data/StateMachine/PlayerState/Walk", fileName = "PlayerWalk")]
 public class PlayerWalk : PlayerState
@@ -35,7 +36,6 @@ public class PlayerWalk : PlayerState
         {
             stateMachine.SwitchState(typeof(PlayerCoyoteTime));
         }
-
         //currentSpeed = Mathf.MoveTowards(currentSpeed, walkSpeed, acceleration * Time.deltaTime);
     }
 

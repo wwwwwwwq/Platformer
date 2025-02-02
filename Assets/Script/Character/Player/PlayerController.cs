@@ -51,10 +51,10 @@ public class PlayerController : HealthController
         VoicePlayer = GetComponentInChildren<AudioSource>();
     }
 
-    private void Start()
-    {
-        input.EnableGameplayInputs();
-    }
+    //private void Start()
+    //{
+    //    input.EnableGameplayInputs();
+    //}
 
     private void Update()
     {
@@ -91,8 +91,8 @@ public class PlayerController : HealthController
     public void Move(float speed) 
     {
         if (input.Move)
-        {
-            transform.localScale = new Vector3(input.AxesX, 1f, 1f);
+        { 
+            transform.localScale = new Vector3(Mathf.Sign(input.AxesX), 1f, 1f);
         }
         SetVelocityX(speed * input.AxesX);
     }

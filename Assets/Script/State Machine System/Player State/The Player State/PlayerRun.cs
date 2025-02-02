@@ -16,7 +16,7 @@ public class PlayerRun : PlayerState
             stateMachine.SwitchState(typeof(PlayerIdle));
         }
 
-        if (!input.Run)
+        if (!input.Move)
         {
             stateMachine.SwitchState(typeof(PlayerWalk));
         }
@@ -42,5 +42,10 @@ public class PlayerRun : PlayerState
     public override void PhysicUpdate()
     {
         player.Move(player.runSpeed);
+    }
+
+    public override void Exit()
+    {
+        input.Run = false;
     }
 }

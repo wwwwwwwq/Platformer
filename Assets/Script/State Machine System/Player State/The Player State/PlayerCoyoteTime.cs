@@ -25,11 +25,10 @@ public class PlayerCoyoteTime : PlayerState
             stateMachine.SwitchState(typeof(PlayerJumpUp));
         }
 
-        if (StateDuration>coyoteTime || !input.Move)
+        if (StateDuration > coyoteTime || !input.Move)
         {
             stateMachine.SwitchState(typeof(PlayerFall));
         }
-        
     }
 
     public override void PhysicUpdate()

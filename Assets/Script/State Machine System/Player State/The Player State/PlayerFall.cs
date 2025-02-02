@@ -12,7 +12,7 @@ public class PlayerFall : PlayerState
 
     public override void LogicUpdate()
     {
-       if(player.IsGrounded)
+        if(player.IsGrounded)
         {
             stateMachine.SwitchState(typeof(PlayerLand));
             Debug.Log("PlayerLand");

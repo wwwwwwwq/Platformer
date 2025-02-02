@@ -1,4 +1,5 @@
 using UnityEngine;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
 [CreateAssetMenu(menuName = "Data/StateMachine/PlayerState/JumpUp", fileName = "PlayerJumpUp")]
 public class PlayerJumpUp : PlayerState
@@ -11,7 +12,7 @@ public class PlayerJumpUp : PlayerState
     {
         base.Enter();
 
-        currentSpeed = player.MoveSpeed;
+        //currentSpeed = player.MoveSpeed;
         input.HasJumpInputBuffer = false;
         player.SetVelocityY(jumpForce);
         //player.VoicePlayer.PlayOneShot(jumpSFX);
@@ -20,7 +21,7 @@ public class PlayerJumpUp : PlayerState
 
     public override void LogicUpdate()
     {
-        if(input.StopJump || player.IsFalling)
+        if (input.StopJump || player.IsFalling)
         {
             stateMachine.SwitchState(typeof(PlayerFall));
         }

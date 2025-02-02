@@ -12,7 +12,7 @@ public class PlayerCrouch : PlayerState
 
     public override void LogicUpdate()
     {
-        if(!input.Crouch)
+        if (!input.Crouch)
         {
             stateMachine.SwitchState(typeof(PlayerIdle));
         }

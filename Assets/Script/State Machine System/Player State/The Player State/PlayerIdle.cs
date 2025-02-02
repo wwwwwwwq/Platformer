@@ -21,7 +21,7 @@ public class PlayerIdle : PlayerState
             stateMachine.SwitchState(typeof(PlayerWalk));
         }
 
-        if(input.Crouch)
+        if (input.Crouch)
         {
             stateMachine.SwitchState(typeof(PlayerCrouch));
         }
@@ -35,7 +35,6 @@ public class PlayerIdle : PlayerState
         {
             stateMachine.SwitchState(typeof(PlayerFall));
         }
-
         //currentSpeed = Mathf.MoveTowards(currentSpeed, 0f, deceleration * Time.deltaTime);
     }
 

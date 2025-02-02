@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerState : ScriptableObject,IState
@@ -27,7 +28,6 @@ public class PlayerState : ScriptableObject,IState
     {
         stateHash = Animator.StringToHash(stateName);
     }
-
     public void Initialize(PlayerStateMachine stateMachine, PlayerController player, PlayerInput input, Animator animator)
     {
         this.stateMachine = stateMachine;
@@ -41,7 +41,7 @@ public class PlayerState : ScriptableObject,IState
         animator.CrossFade(stateHash, transitionDuration);
         stateStartTime = Time.time;
         Debug.Log("Player Enter State: " + stateName);
-        Debug.Log(currentSpeed);
+        //Debug.Log(currentSpeed);
     }
 
     public virtual void Exit()
