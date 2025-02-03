@@ -4,6 +4,13 @@
   "Documents": [
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+      "AbsoluteMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|d:\\\u4E09\u8F6E\\platformer\\assets\\script\\input\\playerinputactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\input\\playerinputactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|d:\\\u4E09\u8F6E\\platformer\\assets\\script\\state machine system\\player state\\the player state\\playerclimbslip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\state machine system\\player state\\the player state\\playerclimbslip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -195,7 +202,11 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|d:\\\u4E09\u8F6E\\platformer\\assets\\script\\playera\\spell\\lighthealingspell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+      "AbsoluteMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|D:\\\u4E09\u8F6E\\Platformer\\assets\\script\\playera\\spell\\lighthealingspell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> Stashed changes
       "RelativeMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\playera\\spell\\lighthealingspell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -322,7 +333,11 @@
             {
               "$type": "Document",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentIndex": 3,
+=======
+              "DocumentIndex": 4,
+>>>>>>> Stashed changes
               "Title": "LightBallSpell.cs",
               "DocumentMoniker": "D:\\\u4E09\u8F6E\\Platformer\\Assets\\Script\\PlayerA\\Spell\\LightBallSpell.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\PlayerA\\Spell\\LightBallSpell.cs",
@@ -336,6 +351,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PlayerInputActions.cs",
+              "DocumentMoniker": "D:\\\u4E09\u8F6E\\Platformer\\Assets\\Script\\Input\\PlayerInputActions.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Input\\PlayerInputActions.cs",
+              "ToolTip": "D:\\\u4E09\u8F6E\\Platformer\\Assets\\Script\\Input\\PlayerInputActions.cs",
+              "RelativeToolTip": "Assets\\Script\\Input\\PlayerInputActions.cs",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T06:37:24.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "PlayerClimbSlip.cs",
               "DocumentMoniker": "D:\\\u4E09\u8F6E\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerClimbSlip.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerClimbSlip.cs",
@@ -348,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "LightHealingSpell.cs",
               "DocumentMoniker": "D:\\\u4E09\u8F6E\\Platformer\\Assets\\Script\\PlayerA\\Spell\\LightHealingSpell.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\PlayerA\\Spell\\LightHealingSpell.cs",
@@ -356,12 +384,11 @@
               "RelativeToolTip": "Assets\\Script\\PlayerA\\Spell\\LightHealingSpell.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAYwCIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T05:41:23.174Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-29T05:41:23.174Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "HealthController.cs",
               "DocumentMoniker": "D:\\\u4E09\u8F6E\\Platformer\\Assets\\Script\\Character\\HealthController.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Character\\HealthController.cs",
@@ -369,6 +396,7 @@
               "RelativeToolTip": "Assets\\Script\\Character\\HealthController.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAgwBsAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< Updated upstream
               "WhenOpened": "2025-01-29T05:34:57.758Z",
 =======
               "DocumentIndex": 1,
@@ -521,6 +549,13 @@
               "$type": "Document",
               "DocumentIndex": 5,
 <<<<<<< Updated upstream
+=======
+              "WhenOpened": "2025-01-29T05:34:57.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+>>>>>>> Stashed changes
               "Title": "SpellManager.cs",
               "DocumentMoniker": "D:\\\u4E09\u8F6E\\Platformer\\Assets\\Script\\PlayerA\\SpellManager.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\PlayerA\\SpellManager.cs",
@@ -1108,7 +1143,11 @@
             {
               "$type": "Document",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentIndex": 4,
+=======
+              "DocumentIndex": 5,
+>>>>>>> Stashed changes
               "Title": "Spell.cs",
               "DocumentMoniker": "D:\\\u4E09\u8F6E\\Platformer\\Assets\\Script\\PlayerA\\Spell.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\PlayerA\\Spell.cs",
