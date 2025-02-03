@@ -18,9 +18,13 @@ Logs/AssetImportWorker1.log
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 61612
 =======
 56115
+>>>>>>> Stashed changes
+=======
+51605
 >>>>>>> Stashed changes
 =======
 51605
@@ -64,7 +68,11 @@ D:/三轮/Platformer
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Player connection [18336]  Target information:
+=======
+Player connection [13872]  Target information:
+>>>>>>> Stashed changes
 =======
 Player connection [13872]  Target information:
 >>>>>>> Stashed changes
@@ -79,6 +87,7 @@ Player connection [13872] Host joined alternative multi-casting on [225.0.0.222:
 [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Refreshing native plugins compatible for Editor in 12.13 ms, found 4 plugins.
 =======
 Player connection [21488]  Target information:
@@ -89,6 +98,9 @@ Player connection [21488] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [21488] Host joined alternative multi-casting on [225.0.0.222:34997]...
 [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
 Refreshing native plugins compatible for Editor in 19.83 ms, found 4 plugins.
+>>>>>>> Stashed changes
+=======
+Refreshing native plugins compatible for Editor in 12.53 ms, found 4 plugins.
 >>>>>>> Stashed changes
 =======
 Refreshing native plugins compatible for Editor in 12.53 ms, found 4 plugins.
@@ -114,7 +126,11 @@ Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.42f1c1/Editor/Data/
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56404
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56184
+>>>>>>> Stashed changes
 =======
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56184
 >>>>>>> Stashed changes
@@ -128,6 +144,7 @@ Registered in 0.004670 seconds.
 - Loaded All Assemblies, in  0.213 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 - Finished resetting the current domain, in  0.154 seconds
@@ -156,6 +173,11 @@ Domain Reload Profiling: 373ms
 Domain Reload Profiling: 373ms
 	BeginReloadAssembly (65ms)
 >>>>>>> Stashed changes
+=======
+- Finished resetting the current domain, in  0.162 seconds
+Domain Reload Profiling: 373ms
+	BeginReloadAssembly (65ms)
+>>>>>>> Stashed changes
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
@@ -163,8 +185,13 @@ Domain Reload Profiling: 373ms
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 		CreateAndSetChildDomain (1ms)
 	RebuildCommonClasses (19ms)
+=======
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (20ms)
+>>>>>>> Stashed changes
 =======
 		CreateAndSetChildDomain (0ms)
 	RebuildCommonClasses (20ms)
@@ -192,6 +219,7 @@ Domain Reload Profiling: 373ms
 			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (1ms)
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 			ProcessInitializeOnLoadAttributes (87ms)
@@ -229,6 +257,10 @@ Domain Reload Profiling: 373ms
 			ProcessInitializeOnLoadAttributes (91ms)
 			ProcessInitializeOnLoadMethodAttributes (29ms)
 >>>>>>> Stashed changes
+=======
+			ProcessInitializeOnLoadAttributes (91ms)
+			ProcessInitializeOnLoadMethodAttributes (29ms)
+>>>>>>> Stashed changes
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -241,9 +273,13 @@ Symbol file LoadedFromMemory is not a mono symbol file
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - Loaded All Assemblies, in  0.442 seconds
 =======
 - Loaded All Assemblies, in  3.802 seconds
+>>>>>>> Stashed changes
+=======
+- Loaded All Assemblies, in  0.420 seconds
 >>>>>>> Stashed changes
 =======
 - Loaded All Assemblies, in  0.420 seconds
@@ -260,8 +296,13 @@ Mono: successfully reloaded assembly
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - Finished resetting the current domain, in  0.466 seconds
 Domain Reload Profiling: 906ms
+=======
+- Finished resetting the current domain, in  0.467 seconds
+Domain Reload Profiling: 884ms
+>>>>>>> Stashed changes
 =======
 - Finished resetting the current domain, in  0.467 seconds
 Domain Reload Profiling: 884ms
@@ -313,11 +354,15 @@ Domain Reload Profiling: 4378ms
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
 		SetupLoadedEditorAssemblies (377ms)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (4ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 			BeforeProcessingInitializeOnLoad (54ms)
 			ProcessInitializeOnLoadAttributes (347ms)
@@ -2344,6 +2389,16 @@ Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 second
 		AwakeInstancesAfterBackupRestoration (4ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
 >>>>>>> Stashed changes
+=======
+			BeforeProcessingInitializeOnLoad (47ms)
+			ProcessInitializeOnLoadAttributes (283ms)
+			ProcessInitializeOnLoadMethodAttributes (35ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+>>>>>>> Stashed changes
 Refreshing native plugins compatible for Editor in 3.49 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4941 Unused Serialized files (Serialized files now loaded: 0)
@@ -2351,6 +2406,7 @@ Unloading 50 unused Assets / (132.5 KB). Loaded Objects now: 5410.
 Memory consumption went from 163.6 MB to 163.4 MB.
 Total: 2.411800 ms (FindLiveObjects: 0.225800 ms CreateObjectMapping: 0.085000 ms MarkObjects: 2.010800 ms  DeleteObjects: 0.089300 ms)
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 Prepare: number of updated asset objects reloaded= 0
@@ -9622,6 +9678,8 @@ Memory consumption went from 160.0 MB to 159.9 MB.
 Total: 2.533600 ms (FindLiveObjects: 0.275300 ms CreateObjectMapping: 0.089000 ms MarkObjects: 2.116200 ms  DeleteObjects: 0.051300 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+=======
+>>>>>>> Stashed changes
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
