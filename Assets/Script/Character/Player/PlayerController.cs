@@ -1,45 +1,58 @@
 using Cinemachine;
-using Unity.VisualScripting;
 using UnityEngine;
+using System.Collections;
+using Unity.VisualScripting;
 
 public class PlayerController : HealthController
 {
-    GroundDetector groundDetector;
+    private GroundDetector groundDetector;
+    private WallDetector wallDetector;
+    private PlayerInput input;
+    private Rigidbody2D rb;
+    private Animator anim;
 
-    WallDetector wallDetector;
-
-    PlayerInput input;
-
-    Rigidbody2D rb;
-
-    Animator anim;
-
-    [Header("Player Move")]
+    [Header("Movement Settings")]
     public float walkSpeed = 5f;
-    public  float runSpeed = 7f;
+    public float runSpeed = 7f;
+    public float crouchSpeed = 3f;
+    private bool isCrouching => input.Crouch && IsGrounded;
+    private bool isRunning => input.Run;
 
-    [Header("Jump Corner Correct")]
+    [Header("Jump Settings")]
+    public float jumpForce = 7f;
+    public float airJumpForce = 5f;
+    public float coyoteTime = 0.1f;
+    private float coyoteTimeCounter;
+    private bool canAirJump = true;
+    private bool isJumping;
+
+    [Header("Climb Settings")]
+    public float climbSlipSpeed = 3f;
+    public float wallJumpForce = 10f;
+    public float wallJumpControlDelay = 0.2f;
+    private bool isWallSliding;
+    private bool isWallJumping;
+
+    [Header("Input Buffer")]
+    public float jumpBufferTime = 0.1f;
+    private bool hasJumpBuffer;
+
+    [Header("Corner Correction")]
     public float raycastLength = 0.7f;
-    public Vector3 cornerRaycastPos = new Vector3(0.7f, 0, 0);
-    public Vector3 innerRaycastPos = new Vector3(0.25f, 0, 0);
-    public bool cornerCorrect;
-    public LayerMask ground;
+    public Vector3 cornerRaycastOffset = new Vector3(0.7f, 0, 0);
+    public Vector3 innerRaycastOffset = new Vector3(0.25f, 0, 0);
+    public LayerMask groundLayer;
+    private bool cornerCorrect;
 
-    [Header("Player Camera Controller")]
+    [Header("Camera Settings")]
     public CinemachineVirtualCamera virtualCamera;
-    public float scrollSpeed = 1.0f;
-    public float minScale = 1f;
-    public float maxScale = 20f;
-    public AudioSource VoicePlayer { get; private set; }
+    public float scrollSpeed = 1f;
+    public float minCameraSize = 1f;
+    public float maxCameraSize = 20f;
 
-    public bool isHurting = false;
-    public bool CanAirJump { get; set; } = true;
-    public bool CanWallJump { get; set; } = true;
-    public bool IsGrounded => groundDetector.IsGrounded;
-    public bool IsFalling => rb.velocity.y < 0f && !IsGrounded;
-    public bool IsTouchingWall => wallDetector.IsTouchingWall;
-
-    public float MoveSpeed => Mathf.Abs(rb.velocity.x);
+    private bool IsGrounded => groundDetector.IsGrounded;
+    private bool IsTouchingWall => wallDetector.IsTouchingWall;
+    //private bool IsFalling => rb.velocity.y < 0 && !IsGrounded;
 
     private void Awake()
     {
@@ -48,136 +61,258 @@ public class PlayerController : HealthController
         input = GetComponent<PlayerInput>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        VoicePlayer = GetComponentInChildren<AudioSource>();
     }
-
-    //private void Start()
-    //{
-    //    input.EnableGameplayInputs();
-    //}
 
     private void Update()
     {
-        //Camera Controller
-        UpdateCameraScale();
-        //Jump Corner Correct
-        RaycastCollision();
+        HandleMovement();
+        HandleJump();
+        HandleWallSlide();
+        HandleWallJump();
+        if (virtualCamera != null) HandleCameraZoom();
+        HandleCornerCorrection();
+        HandleJumpBuffer();
+        UpdateAnimations();
+        if (currentHealth <= 0 && !isDie) Die();
+    }
+
+    #region 痄雄
+    private void HandleMovement()
+    {
+        float speed = isCrouching ? crouchSpeed :
+                     isRunning ? runSpeed : walkSpeed;
+
+        if (input.Move)
+        {
+            transform.localScale = new Vector3(Mathf.Sign(input.AxesX), 1, 1);
+            rb.velocity = new Vector2(speed * input.AxesX, rb.velocity.y);
+        }
+        else
+        {
+            rb.velocity = new Vector2(0, rb.velocity.y);
+        }
+    }
+    #endregion
+
+    #region 泐埲
+    private void HandleJump()
+    {
+        // 重置地面状态
+        if (IsGrounded)
+        {
+            canAirJump = true;
+            coyoteTimeCounter = coyoteTime;
+            isJumping = false;
+        }
+        else
+        {
+            coyoteTimeCounter -= Time.deltaTime;
+        }
+
+        // 处理跳跃输入缓冲
+        if (input.Jump)
+        {
+            input.SetJumpInputBufferTimer();
+        }
+
+        // 执行跳跃
+        if (hasJumpBuffer)
+        {
+            if (IsGrounded || coyoteTimeCounter > 0)
+            {
+                GroundJump();
+            }
+            else if (IsTouchingWall)
+            {
+                WallJump();
+            }
+            else if (canAirJump && !isWallJumping)
+            {
+                AirJump();
+            }
+        }
+
+        // 短按跳跃时降低高度
+        if (input.StopJump && rb.velocity.y > 0)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, 0);
+            isJumping = false;
+        }
+    }
+    #endregion
+
+    #region 跳跃缓冲处理
+    private void HandleJumpBuffer()
+    {
+        if (input.HasJumpInputBuffer && (IsGrounded || IsTouchingWall || canAirJump))
+        {
+            hasJumpBuffer = true;
+            input.HasJumpInputBuffer = false;
+        }
+        else
+        {
+            hasJumpBuffer = false;
+        }
+    }
+    #endregion
+
+    #region 不同类型跳跃实现
+    private void GroundJump()
+    {
+        rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        isJumping = true;
+        anim.Play("Jump");
+    }
+
+    private void AirJump()
+    {
+        rb.velocity = new Vector2(rb.velocity.x, airJumpForce);
+        canAirJump = false;
+        anim.Play("AirJump");
+    }
+
+    private void WallJump()
+    {
+        float direction = -Mathf.Sign(transform.localScale.x);
+        rb.velocity = new Vector2(direction * wallJumpForce, jumpForce);
+        isWallJumping = true;
+        canAirJump = true;
+        StartCoroutine(ResetWallJumpControl());
+        anim.Play("ClimbHop");
+    }
+
+    private IEnumerator ResetWallJumpControl()
+    {
+        yield return new WaitForSeconds(wallJumpControlDelay);
+        isWallJumping = false;
+    }
+    #endregion
+
+    #region 墙壁滑落
+    private void HandleWallSlide()
+    {
+        if (IsTouchingWall && !IsGrounded && rb.velocity.y < 0)
+        {
+            isWallSliding = true;
+            rb.velocity = new Vector2(rb.velocity.x, -climbSlipSpeed);
+            canAirJump = true;
+        }
+        else
+        {
+            isWallSliding = false;
+        }
+    }
+    #endregion
+
+    #region 墙壁跳跃
+    private void HandleWallJump()
+    {
+        if (IsTouchingWall && input.Jump)
+        {
+            WallJump();
+        }
+    }
+    #endregion
+
+    #region 摄像机缩放
+    private void HandleCameraZoom()
+    {
+        float scroll = Input.GetAxis("Mouse ScrollWheel");
+        if (scroll != 0)
+        {
+            float newSize = virtualCamera.m_Lens.OrthographicSize - scroll * scrollSpeed;
+            virtualCamera.m_Lens.OrthographicSize = Mathf.Clamp(newSize, minCameraSize, maxCameraSize);
+        }
+    }
+    #endregion
+
+    #region 角落修正
+    private void HandleCornerCorrection()
+    {
+        bool leftCorner = Physics2D.Raycast(transform.position + cornerRaycastOffset, Vector2.up, raycastLength, groundLayer) &&
+                         !Physics2D.Raycast(transform.position + innerRaycastOffset, Vector2.up, raycastLength, groundLayer);
+
+        bool rightCorner = Physics2D.Raycast(transform.position - cornerRaycastOffset, Vector2.up, raycastLength, groundLayer) &&
+                          !Physics2D.Raycast(transform.position - innerRaycastOffset, Vector2.up, raycastLength, groundLayer);
+
+        cornerCorrect = leftCorner || rightCorner;
+
         if (cornerCorrect)
         {
-            CornerCorrect(rb.velocity.y);
-            Debug.Log("Corner Correct");
-        }
-        if (currentHealth <= 0 && !isDie)
-        {
-            Die();
-        }
-    }
+            RaycastHit2D hit = Physics2D.Raycast(
+                transform.position - innerRaycastOffset + Vector3.up * raycastLength,
+                Vector3.left, raycastLength, groundLayer);
 
-    private void UpdateCameraScale()
-    {
-        float scrollInput = Input.GetAxis("Mouse ScrollWheel");
+            if (hit.collider != null)
+            {
+                float adjust = hit.point.x - (transform.position.x - cornerRaycastOffset.x);
+                transform.position += new Vector3(adjust, 0, 0);
+                return;
+            }
 
-        if (scrollInput != 0)
-        {
-            float newSize = virtualCamera.m_Lens.OrthographicSize - scrollInput * scrollSpeed;
+            hit = Physics2D.Raycast(
+                transform.position + innerRaycastOffset + Vector3.up * raycastLength,
+                Vector3.right, raycastLength, groundLayer);
 
-            newSize = Mathf.Clamp(newSize, minScale, maxScale);
-
-            virtualCamera.m_Lens.OrthographicSize = newSize;
-        }
-    }
-
-    #region Move
-    public void Move(float speed) 
-    {
-        if (input.Move)
-        { 
-            transform.localScale = new Vector3(Mathf.Sign(input.AxesX), 1f, 1f);
-        }
-        SetVelocityX(speed * input.AxesX);
-    }
-    #endregion
-
-    #region Jump Corner Correct
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawLine(transform.position - innerRaycastPos + Vector3.up * raycastLength,
-                        transform.position - innerRaycastPos + Vector3.up * raycastLength + Vector3.left * raycastLength);
-        Gizmos.DrawLine(transform.position + innerRaycastPos + Vector3.up * raycastLength,
-                        transform.position + innerRaycastPos + Vector3.up * raycastLength + Vector3.right * raycastLength);
-        Gizmos.DrawLine(transform.position + cornerRaycastPos, transform.position + cornerRaycastPos + Vector3.up * raycastLength);
-        Gizmos.DrawLine(transform.position - cornerRaycastPos, transform.position - cornerRaycastPos + Vector3.up * raycastLength);
-        Gizmos.DrawLine(transform.position + innerRaycastPos, transform.position + innerRaycastPos + Vector3.up * raycastLength);
-        Gizmos.DrawLine(transform.position - innerRaycastPos, transform.position - innerRaycastPos + Vector3.up * raycastLength);
-    }
-
-    void RaycastCollision()
-    {
-        cornerCorrect = Physics2D.Raycast(transform.position + cornerRaycastPos, Vector2.up, raycastLength, ground) &&
-                        !Physics2D.Raycast(transform.position + innerRaycastPos, Vector2.up, raycastLength, ground) ||
-                        Physics2D.Raycast(transform.position - cornerRaycastPos, Vector2.up, raycastLength, ground) &&
-                        !Physics2D.Raycast(transform.position - innerRaycastPos, Vector2.up, raycastLength, ground);
-    }
-
-    void CornerCorrect(float Yvelocity)
-    {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position - innerRaycastPos + Vector3.up * raycastLength,
-                                             Vector3.left, raycastLength, ground);
-        if (hit.collider != null)
-        {
-            float newPos = hit.point.x - (transform.position.x - cornerRaycastPos.x);
-            transform.position = new Vector3(transform.position.x + newPos, transform.position.y, 0);
-            rb.velocity = new Vector2(rb.velocity.x, Yvelocity);
-            return;
-        }
-
-        hit = Physics2D.Raycast(transform.position + innerRaycastPos + Vector3.up * raycastLength,
-                                             Vector3.right, raycastLength, ground);
-        if (hit.collider != null)
-        {
-            float newPos = hit.point.x - (transform.position.x + cornerRaycastPos.x);
-            transform.position = new Vector3(transform.position.x + newPos, transform.position.y, 0);
-            rb.velocity = new Vector2(rb.velocity.x, Yvelocity);
-            return;
+            if (hit.collider != null)
+            {
+                float adjust = hit.point.x - (transform.position.x + cornerRaycastOffset.x);
+                transform.position += new Vector3(adjust, 0, 0);
+            }
         }
     }
     #endregion
 
-    //受伤，死亡不用玩家状态机实现
-    #region Hurt
+    #region 更新动画状态
+    private void UpdateAnimations()
+    {
+        if (isWallJumping)
+        {
+            anim.Play("ClimbHop");
+        }
+        else if (isWallSliding)
+        {
+            anim.Play("ClimbSlip");
+        }
+        else if (!IsGrounded)
+        {
+            anim.Play(isJumping ? "Jump" : "Fall");
+        }
+        else if (isCrouching)
+        {
+            anim.Play("Crouch");
+        }
+        else if (input.Move)
+        {
+            anim.Play(isRunning ? "Run" : "Walk");
+        }
+        else if (!isDie && !isHurt)
+        {
+            anim.Play("Idle");
+        }
+    }
+    #endregion
+
+    #region 受伤
     public void PlayerHurt(float damage)
     {
+        isHurt = true;
         anim.SetTrigger("Hurt");
         TakeDamage(damage);
+        //rb.velocity = new Vector2(-transform.localScale.x * 3f, 5f);击退
+    }
+    public void SetPlayerHurt()
+    {
+        isHurt = false;
     }
     #endregion
 
-    #region Die
+    #region 死亡
     public void Die()
     {
         isDie = true;
         anim.Play("Die");
-        //处理另外的逻辑，比如调出UI等
+        enabled = false;
     }
     #endregion
-
-    public void SetVelocity(Vector2 velocity)
-    {
-        rb.velocity = velocity;
-    }
-
-    public void SetVelocityX(float velocityX)
-    {
-        rb.velocity = new Vector2(velocityX, rb.velocity.y);
-    }
-
-    public void SetVelocityY(float velocityY)
-    {
-        rb.velocity = new Vector2(rb.velocity.x, velocityY);
-    }
-
-    public void SetGravity(float value)
-    {
-        rb.gravityScale = value;
-    }
 }

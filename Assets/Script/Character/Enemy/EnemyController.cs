@@ -1,165 +1,221 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
 public class EnemyController : HealthController
 {
-    GroundDetector groundDetecter;
+    //private GroundDetector groundDetector;
+    private WallDetector wallDetector;
+    private PlayerDetecter playerDetecter;
+    //private CornerDetector cornerDetector;
+    private Rigidbody2D rb;
+    private Animator anim;
 
-    WallDetector wallDetector;
+    [Header("Movement Settings")]
+    [SerializeField] private float chaseSpeed = 3f;
+    [SerializeField] private float patrolSpeed = 1f;
+    [SerializeField] private float arrivalThreshold = 0.1f;
 
-    PlayerDetecter playerDetecter;
+    [Header("Jump Settings")]
+    [SerializeField] private float jumpForce = 7f;
 
-    CornerDetector cornerDetector;
+    [Header("Patrol Settings")]
+    [SerializeField] private GameObject[] patrolPoints;
+    [SerializeField] private float idleDuration = 0.5f;
+    private GameObject currentPatrolPoint;
+    private Vector2 moveDirection;
+    private bool isPatrolling;
+    private bool isIdle;
 
-    [SerializeField] protected float attackRadius = 0.1f;
+    [Header("Attack Settings")]
+    [SerializeField] private Vector3 attackOffset;
+    [SerializeField] private Vector2 attackSize;
+    [SerializeField] private LayerMask playerLayer;
+    [SerializeField] private float damage;
+    [SerializeField] private float attackCooldown = 1f;
+    private bool canAttack = true;
 
-    [SerializeField] protected float chaseRadius = 0.5f;
-
-    [Header("Enemy Patrol")]
-    Vector2 direction;
-    [SerializeField] GameObject[] patrolPoints;
-
-    [Header("Enemy Move")]
-    public float chaseSpeed = 3f;
-    public float patrolSpeed = 1f;
-
-    [Header("Enemy Attack")]
-    [SerializeField] Vector3 positionOffset;
-    [SerializeField] Vector2 attackSize;
-    [SerializeField] LayerMask playerLayer;
-    [SerializeField] float damage;
-
-    public bool IsFlyEnemy => transform.CompareTag("FlyEnemy");
-    public bool IsGrounded => groundDetecter.IsGrounded;
-
-    public bool IsCorner => cornerDetector.IsGroundCorner;
-
-    public bool IsTouchingWall => wallDetector.IsTouchingWall;
-
-    public bool CanChasePlayer => playerDetecter.CanChasePlayer;
-
-    public bool CanAttackPlayer => playerDetecter.CanAttackPlayer;
-
-    public AudioSource VoiceEnemy { get; private set; }
-
-    Rigidbody2D rb;
-
-    Animator anim;
+    private bool IsFlyEnemy => CompareTag("FlyEnemy");
+    //private bool IsGrounded => groundDetector.IsGrounded;
+    private bool IsTouchingWall => wallDetector.IsTouchingWall;
+    //private bool IsGroundCorner => cornerDetector.IsGroundCorner;
+    private bool CanChasePlayer => playerDetecter.CanChasePlayer;
+    private bool CanAttackPlayer => playerDetecter.CanAttackPlayer;
 
     private void Awake()
     {
         wallDetector = GetComponentInChildren<WallDetector>();
-
-        groundDetecter = GetComponentInChildren<GroundDetector>();
-
+        //groundDetector = GetComponentInChildren<GroundDetector>();
         playerDetecter = GetComponentInChildren<PlayerDetecter>();
-
-        cornerDetector = GetComponentInChildren<CornerDetector>();
-
-        chaseRadius = playerDetecter.chaseRadius;
-
-        attackRadius = playerDetecter.attackRadius;
-
+        //cornerDetector = GetComponentInChildren<CornerDetector>();
         rb = GetComponent<Rigidbody2D>();
-
         anim = GetComponent<Animator>();
+    }
 
-        VoiceEnemy = GetComponentInChildren<AudioSource>();
+    private void Start()
+    {
+        //开始时进入巡逻状态
+        StartPatrol();
     }
 
     private void Update()
     {
-        if (Mathf.Sign(direction.x) != 0)
+        if (isDie) return;
+
+        UpdateFacingDirection();
+
+        if (CanAttackPlayer && canAttack)
         {
-            transform.localScale = new Vector3(Mathf.Sign(direction.x), 1f, 1f);
+            StartAttack();
         }
-
-        if (currentHealth <= 0 && !isDie)
+        else if (CanChasePlayer)
         {
-            Die();
+            ChasePlayer();
+        }
+        else if (isPatrolling)
+        {
+            HandlePatrolMovement();
         }
     }
 
-    public void SetVelocityX(float VelocityX)
+    #region 巡逻
+    private void StartPatrol()
     {
-        rb.velocity = new Vector2(VelocityX, rb.velocity.y);
+        if (patrolPoints.Length == 0) return;
+
+        isPatrolling = true;
+        isIdle = false;
+        SelectNewPatrolPoint();
+        anim.Play("Patrol");
     }
 
-    public void SetVelocityY(float VelocityY)
+    private void HandlePatrolMovement()
     {
-        rb.velocity = new Vector2(rb.velocity.x, VelocityY);
-    }
+        if (currentPatrolPoint == null) return;
 
-    public void SetVelocity(Vector2 velocity)
-    {
-        rb.velocity = velocity;
-    }
+        float distance = Vector2.Distance(transform.position, currentPatrolPoint.transform.position);
 
-    #region Move
-    public void Move(float speed)
-    {
-        if (IsFlyEnemy)
+        if (distance > arrivalThreshold)
         {
-            SetVelocity(speed * direction);
+            moveDirection = (currentPatrolPoint.transform.position - transform.position).normalized;
+            SetMovement(moveDirection * patrolSpeed);
         }
         else
-            SetVelocityX(speed * direction.x);
-    }
-    #endregion
-
-    #region Patrol
-    public GameObject GetPatrolPointAndDirection()
-    {
-        int index = Random.Range(0,patrolPoints.Length);
-
-        GameObject patrolPoint = patrolPoints[index];
-
-        direction = (patrolPoint.transform.position - transform.position).normalized;
-
-        return patrolPoint;
-    }
-    public void MoveToPatrolPoint()
-    {
-        Move(patrolSpeed);
-    }
-    #endregion
-
-    #region Chase
-    public void ChaseToPlayer()
-    {
-        direction = (playerDetecter.colliders[0].transform.position - transform.position).normalized;
-
-        Move(chaseSpeed);
-    }
-    #endregion
-
-    #region Attack
-    public void Attack()
-    {
-        Vector3 EnemyPosition = transform.position;
-        Vector3 targetPosition = EnemyPosition + transform.localScale * positionOffset.x;
-
-        Collider2D[] colliders = Physics2D.OverlapBoxAll(targetPosition, attackSize, playerLayer);
-
-        foreach (var collider in colliders)
         {
-            if (collider.GetComponent<PlayerController>() != null)
+            StartCoroutine(IdleRoutine());
+        }
+
+        //如果敌人不会飞，并且碰到墙壁，则跳跃
+        if (IsTouchingWall)
+        {
+            EnemyJumpUp();
+        }
+    }
+
+    private IEnumerator IdleRoutine()
+    {
+        isPatrolling = false;
+        isIdle = true;
+        anim.Play("Idle");
+        SetMovement(Vector2.zero);
+
+        yield return new WaitForSeconds(idleDuration);
+
+        isIdle = false;
+        StartPatrol();
+    }
+
+    private void SelectNewPatrolPoint()
+    {
+        if (patrolPoints.Length < 2) return;
+
+        GameObject newPoint;
+        do
+        {
+            newPoint = patrolPoints[Random.Range(0, patrolPoints.Length)];
+        } while (newPoint == currentPatrolPoint);//找到不一样的patrolpoint，防止一直在一个点移动
+
+        currentPatrolPoint = newPoint;
+    }
+    #endregion
+
+    #region 追击
+    private void ChasePlayer()
+    {
+        if (isIdle) return;
+
+        isPatrolling = false;
+        anim.Play("Chase");
+        Vector2 targetDirection = (playerDetecter.colliders[0].transform.position - transform.position).normalized;
+        moveDirection = targetDirection;
+        SetMovement(moveDirection * chaseSpeed);
+
+        if (IsTouchingWall)
+        {
+            EnemyJumpUp();
+        }
+    }
+    #endregion
+
+    #region 不会飞的敌人跳跃
+    private void EnemyJumpUp()
+    {
+        anim.Play("Jump");
+        if (!IsFlyEnemy)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        }
+    }
+    #endregion
+
+    #region 攻击
+    private void StartAttack()
+    {
+        isPatrolling = false;
+        canAttack = false;
+        anim.Play("Attack");
+        PerformAttack();
+        StartCoroutine(ResetAttack());
+    }
+
+    private void PerformAttack()
+    {
+        Vector3 attackPosition = transform.position + transform.right * attackOffset.x;
+        Collider2D[] hits = Physics2D.OverlapBoxAll(attackPosition, attackSize, 0, playerLayer);
+
+        foreach (var hit in hits)
+        {
+            if (hit.TryGetComponent<PlayerController>(out var player))
             {
-                collider.GetComponent<PlayerController>().PlayerHurt(damage);
+                player.PlayerHurt(damage);
             }
         }
     }
 
-    private void OnDrawGizmos()
+    private IEnumerator ResetAttack()
     {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(transform.position + positionOffset, attackSize);
+        yield return new WaitForSeconds(attackCooldown);
+        canAttack = true;
     }
     #endregion
 
-    #region Hurt
+    #region 更新敌人朝向
+    private void UpdateFacingDirection()
+    {
+        if (moveDirection.x != 0)
+        {
+            transform.localScale = new Vector3(Mathf.Sign(moveDirection.x), 1, 1);
+        }
+    }
+    #endregion
+
+    #region 移动
+    private void SetMovement(Vector2 velocity)
+    {
+        rb.velocity = IsFlyEnemy ? velocity : new Vector2(velocity.x, rb.velocity.y);
+    }
+    #endregion
+
+    #region 受伤
     public void EnemyHurt(float damage)
     {
         anim.SetTrigger("Hurt");
@@ -167,12 +223,20 @@ public class EnemyController : HealthController
     }
     #endregion
 
-    #region Die
+    #region 死亡
     public void Die()
     {
+        if (isDie) return;
         isDie = true;
         anim.Play("Die");
-        //处理另外的逻辑，比如调出UI等
+        SetMovement(Vector2.zero);
+        enabled = false;
     }
     #endregion
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(transform.position + attackOffset, attackSize);
+    }
 }

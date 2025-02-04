@@ -7,6 +7,7 @@ public class HealthController : MonoBehaviour
     [SerializeField] protected float maxHealth;
 
     [HideInInspector] public bool isDie = false;
+    [HideInInspector] public bool isHurt = false;
 
     public Slider healthBar;
     private void Start()

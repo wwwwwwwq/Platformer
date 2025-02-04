@@ -8,9 +8,9 @@ public class PlayerInput : MonoBehaviour
     [SerializeField] float jumpInputBufferTime = 0.5f;
     [SerializeField] float doublePressThreshold = 0.3f;
 
-    WaitForSeconds waitJumpInputBufferTime;
+    InputActionMap input;
 
-    //PlayerInputActions playerInputActions;
+    WaitForSeconds waitJumpInputBufferTime;
 
     public virtual float AxesX { get; set; }
     public virtual bool IsMovePress { get; set; }
@@ -19,11 +19,13 @@ public class PlayerInput : MonoBehaviour
     public virtual bool StopJump { get; set; }
     public virtual bool Move => AxesX != 0;
     public virtual bool Run { get; set; } = false;
+
+    public int leftPressCount = 0;
+    
+    public int rightPressCount = 0;
     public virtual bool Crouch { get; set; }
 
     float lastPressTime = 0f;
-    int rightPressCount = 0;
-    int leftPressCount = 0;
 
     private void Awake()
     {
@@ -50,51 +52,52 @@ public class PlayerInput : MonoBehaviour
     //    GUI.Label(rect, message, style);
 
     //}
-
     private void DetectDoublePress()
     {
         if (IsMovePress)
         {
             if (Time.time - lastPressTime < doublePressThreshold)
             {
-                if (AxesX > 0)
+                if(AxesX > 0)
                 {
                     rightPressCount++;
-                    leftPressCount = 0;
                 }
-                else if (AxesX < 0)
+                else if(AxesX < 0)
                 {
                     leftPressCount++;
-                    rightPressCount = 0;
                 }
             }
             else
             {
-                rightPressCount = 1;
-                leftPressCount = 1;
+                Run = false;
+                if(AxesX > 0)
+                {
+                    rightPressCount = 1;
+                }
+                else if(AxesX < 0)
+                {
+                    leftPressCount = 1;
+                }
             }
-
             lastPressTime = Time.time;
-
-            if (rightPressCount >= 2 || leftPressCount >= 2)
+            if (leftPressCount >= 2 || rightPressCount >= 2)
             {
-                // ´¥·¢±¼ÅÜÊÂ¼þ
-                Run = true;
                 if (AxesX > 0)
                 {
                     rightPressCount = 0;
                 }
-                else if(AxesX < 0)
+                else if (AxesX < 0)
                 {
                     leftPressCount = 0;
                 }
+                Run = true;
             }
         }
     }
 
     public void SetJumpInputBufferTimer()
     {
-        StopCoroutine(nameof(JumpInputBufferCoroutine));
+        //StopCoroutine(nameof(JumpInputBufferCoroutine));
         StartCoroutine(nameof(JumpInputBufferCoroutine));
     }
 
