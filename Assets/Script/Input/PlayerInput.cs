@@ -20,9 +20,9 @@ public class PlayerInput : MonoBehaviour
     public virtual bool Move => AxesX != 0;
     public virtual bool Run { get; set; } = false;
 
-    public int leftPressCount = 0;
+    int leftPressCount = 0;
     
-    public int rightPressCount = 0;
+    int rightPressCount = 0;
     public virtual bool Crouch { get; set; }
 
     float lastPressTime = 0f;

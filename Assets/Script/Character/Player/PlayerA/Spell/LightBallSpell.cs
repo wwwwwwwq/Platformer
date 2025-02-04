@@ -44,10 +44,13 @@ public class LightBallSpell : Spell
             {
                 DestroyLightBall();
             }
-            //提前摧毁光球
-            if (Input.GetMouseButtonDown(0))
+            //提前摧毁光球(光球至少存在三秒)
+            if (timer >= 3)
             {
-                DestroyLightBall();
+                if (Input.GetMouseButtonDown(0))
+                {
+                    DestroyLightBall();
+                }
             }
         }
         else

@@ -75,6 +75,17 @@ public class EnemyController : HealthController
         {
             HandlePatrolMovement();
         }
+
+        if (!CanChasePlayer)
+        {
+            isPatrolling = true;
+        }
+
+        //如果敌人不会飞，并且碰到墙壁，则跳跃
+        if (!IsFlyEnemy && IsTouchingWall)
+        {
+            EnemyJumpUp();
+        }
     }
 
     #region 巡逻
@@ -102,12 +113,6 @@ public class EnemyController : HealthController
         else
         {
             StartCoroutine(IdleRoutine());
-        }
-
-        //如果敌人不会飞，并且碰到墙壁，则跳跃
-        if (IsTouchingWall)
-        {
-            EnemyJumpUp();
         }
     }
 
@@ -148,18 +153,13 @@ public class EnemyController : HealthController
         Vector2 targetDirection = (playerDetecter.colliders[0].transform.position - transform.position).normalized;
         moveDirection = targetDirection;
         SetMovement(moveDirection * chaseSpeed);
-
-        if (IsTouchingWall)
-        {
-            EnemyJumpUp();
-        }
     }
     #endregion
 
     #region 不会飞的敌人跳跃
     private void EnemyJumpUp()
     {
-        anim.Play("Jump");
+        anim.Play("JumpUp");
         if (!IsFlyEnemy)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
@@ -179,8 +179,32 @@ public class EnemyController : HealthController
 
     private void PerformAttack()
     {
-        Vector3 attackPosition = transform.position + transform.right * attackOffset.x;
-        Collider2D[] hits = Physics2D.OverlapBoxAll(attackPosition, attackSize, 0, playerLayer);
+        // 计算基础攻击方向
+        float horizontalDirection = Mathf.Sign(transform.localScale.x);
+        Vector3 baseOffset = new Vector3(
+            attackOffset.x * horizontalDirection,
+            attackOffset.y,
+            0
+        );
+
+        // 如果是飞行敌人且检测到玩家
+        if (IsFlyEnemy && playerDetecter.colliders.Length > 0)
+        {
+            // 获取玩家位置并计算垂直方向
+            Vector3 playerPos = playerDetecter.colliders[0].transform.position;
+            float verticalDirection = Mathf.Sign(playerPos.y - transform.position.y);
+            baseOffset.y = attackOffset.y * verticalDirection;
+        }
+
+        // 计算最终攻击位置
+        Vector3 attackPosition = transform.position + baseOffset;
+
+        Collider2D[] hits = Physics2D.OverlapBoxAll(
+            attackPosition,
+            attackSize,
+            0,
+            playerLayer
+        );
 
         foreach (var hit in hits)
         {
@@ -189,6 +213,25 @@ public class EnemyController : HealthController
                 player.PlayerHurt(damage);
             }
         }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+
+        // 计算基础偏移（考虑水平方向）
+        float horizontalDirection = Mathf.Sign(transform.localScale.x);
+        Vector3 baseOffset = new Vector3(
+            attackOffset.x * horizontalDirection,
+            attackOffset.y,
+            0
+        );
+
+        // 绘制攻击区域
+        Gizmos.DrawWireCube(
+            transform.position + baseOffset,
+            attackSize
+        );
     }
 
     private IEnumerator ResetAttack()
@@ -233,10 +276,4 @@ public class EnemyController : HealthController
         enabled = false;
     }
     #endregion
-
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(transform.position + attackOffset, attackSize);
-    }
 }

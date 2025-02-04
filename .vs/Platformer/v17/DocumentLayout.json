@@ -3,838 +3,98 @@
   "WorkspaceRootPath": "C:\\unity projects\\Platformer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|c:\\unity projects\\platformer\\assets\\hurtfinish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|solutionrelative:assets\\hurtfinish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|c:\\unity projects\\platformer\\assets\\script\\trap\\mobileplatform\\mobileplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\trap\\mobileplatform\\mobileplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\Normal Enemy\\EnemyChase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\Normal Enemy\\EnemyChase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|c:\\unity projects\\platformer\\assets\\script\\character\\enemy\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\character\\enemy\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|c:\\unity projects\\platformer\\assets\\script\\input\\playerainput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\input\\playerainput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|C:\\unity projects\\Platformer\\assets\\script\\character\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\character\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\PlayerB\\PlayerBStateMachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\State Machine System\\Player State\\PlayerB\\PlayerBStateMachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|c:\\unity projects\\platformer\\assets\\script\\input\\playerinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\input\\playerinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|c:\\unity projects\\platformer\\assets\\script\\input\\playerbinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\input\\playerbinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\Character\\Player\\PlayerB\\PlayerBController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Character\\Player\\PlayerB\\PlayerBController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\EnemyJumpUp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\EnemyJumpUp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\Character\\Player\\WallDetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Character\\Player\\WallDetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\ProPlatformer\\_Scripts\\Effects\\EffectComponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\ProPlatformer\\_Scripts\\Effects\\EffectComponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\Character\\PlayerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Character\\PlayerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\State Machine System\\Base\\StateMachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\State Machine System\\Base\\StateMachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\ThePlayerState\\PlayerIdle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\State Machine System\\Player State\\ThePlayerState\\PlayerIdle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\State Machine System\\Player State\\ThePlayerState\\PlayerRun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\State Machine System\\Player State\\ThePlayerState\\PlayerRun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\State Machine System\\Base\\IState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\State Machine System\\Base\\IState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\ThePlayerState\\PlayerRun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\State Machine System\\Player State\\ThePlayerState\\PlayerRun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\Character\\PlayerGroundDetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Character\\PlayerGroundDetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\Character\\PlayerWallDetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Character\\PlayerWallDetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\TheEnemyState\\EnemyIdle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\State Machine System\\Enemy State\\TheEnemyState\\EnemyIdle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\TheEnemyState\\EnemyPatrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\State Machine System\\Enemy State\\TheEnemyState\\EnemyPatrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\PlayerA\\SpellManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\PlayerA\\SpellManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\Character\\Player\\PlayerGroundDetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Character\\Player\\PlayerGroundDetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\Character\\Player\\GroundDetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Character\\Player\\GroundDetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\EnemyDie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\EnemyDie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\EnemyHurt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\EnemyHurt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\EnemyAttack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\EnemyAttack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\EnemyIdle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\EnemyIdle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\Character\\Player\\PlayerA\\PlayerAController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Character\\Player\\PlayerA\\PlayerAController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\PlayerA\\PlayerAStateMachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\State Machine System\\Player State\\PlayerA\\PlayerAStateMachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\PlayerStateMachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\State Machine System\\Player State\\PlayerStateMachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerJumpUp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerJumpUp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\PlayerState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\State Machine System\\Player State\\PlayerState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerCrouch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerCrouch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerAirJump.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerAirJump.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerAttack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerAttack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerClimbHop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerClimbHop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerClimbSlip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerClimbSlip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerCoyoteTime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerCoyoteTime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerFall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerFall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerIdle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerIdle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerLand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerLand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerRun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerRun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerWalk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerWalk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\Normal Enemy\\EnemyIdle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\Normal Enemy\\EnemyIdle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\Normal Enemy\\EnemyPatrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\Normal Enemy\\EnemyPatrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\Normal Enemy\\EnemyJumpUp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\Normal Enemy\\EnemyJumpUp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\EnemyState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\State Machine System\\Enemy State\\EnemyState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Base\\StateMachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\State Machine System\\Base\\StateMachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\EnemyStateMachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\State Machine System\\Enemy State\\EnemyStateMachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\unity projects\\platformer\\assets\\script\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\script\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\unity projects\\platformer\\assets\\script\\input\\playerainput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\script\\input\\playerainput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 1,
+      "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 200,
+          "DockedWidth": 200,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "HurtFinish.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\HurtFinish.cs",
-              "RelativeDocumentMoniker": "Assets\\HurtFinish.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\HurtFinish.cs",
-              "RelativeToolTip": "Assets\\HurtFinish.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Title": "MobilePlatform.cs",
+              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\Trap\\MobilePlatform\\MobilePlatform.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Trap\\MobilePlatform\\MobilePlatform.cs",
+              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\Trap\\MobilePlatform\\MobilePlatform.cs",
+              "RelativeToolTip": "Assets\\Script\\Trap\\MobilePlatform\\MobilePlatform.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAIwAYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T15:22:30.627Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PlayerBInput.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\Input\\PlayerBInput.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Input\\PlayerBInput.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\Input\\PlayerBInput.cs",
-              "RelativeToolTip": "Assets\\Script\\Input\\PlayerBInput.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T15:21:30.064Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PlayerAInput.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\Input\\PlayerAInput.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Input\\PlayerAInput.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\Input\\PlayerAInput.cs",
-              "RelativeToolTip": "Assets\\Script\\Input\\PlayerAInput.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T12:38:29.804Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PlayerBStateMachine.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\PlayerB\\PlayerBStateMachine.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Player State\\PlayerB\\PlayerBStateMachine.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\PlayerB\\PlayerBStateMachine.cs",
-              "RelativeToolTip": "Assets\\Script\\State Machine System\\Player State\\PlayerB\\PlayerBStateMachine.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T07:00:08.089Z",
+              "WhenOpened": "2025-02-04T06:49:09.276Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EnemyChase.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\Normal Enemy\\EnemyChase.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\Normal Enemy\\EnemyChase.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\Normal Enemy\\EnemyChase.cs",
-              "RelativeToolTip": "Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\Normal Enemy\\EnemyChase.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAwBUAAAAJAAAAAAAAAA==",
+              "Title": "EnemyController.cs",
+              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\Character\\Enemy\\EnemyController.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Character\\Enemy\\EnemyController.cs",
+              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\Character\\Enemy\\EnemyController.cs",
+              "RelativeToolTip": "Assets\\Script\\Character\\Enemy\\EnemyController.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAuwJoAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T07:44:40.43Z",
+              "WhenOpened": "2025-02-04T06:14:43.421Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "PlayerAStateMachine.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\PlayerA\\PlayerAStateMachine.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Player State\\PlayerA\\PlayerAStateMachine.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\PlayerA\\PlayerAStateMachine.cs",
-              "RelativeToolTip": "Assets\\Script\\State Machine System\\Player State\\PlayerA\\PlayerAStateMachine.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T06:59:17.561Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "PlayerAController.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\Character\\Player\\PlayerA\\PlayerAController.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Character\\Player\\PlayerA\\PlayerAController.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\Character\\Player\\PlayerA\\PlayerAController.cs",
-              "RelativeToolTip": "Assets\\Script\\Character\\Player\\PlayerA\\PlayerAController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T07:01:51.156Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "PlayerJumpUp.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerJumpUp.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerJumpUp.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerJumpUp.cs",
-              "RelativeToolTip": "Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerJumpUp.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T14:24:36.549Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "PlayerState.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\PlayerState.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Player State\\PlayerState.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\PlayerState.cs",
-              "RelativeToolTip": "Assets\\Script\\State Machine System\\Player State\\PlayerState.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAxwCUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T14:09:30.187Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "PlayerCrouch.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerCrouch.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerCrouch.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerCrouch.cs",
-              "RelativeToolTip": "Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerCrouch.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T14:32:37.676Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "PlayerAirJump.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerAirJump.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerAirJump.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerAirJump.cs",
-              "RelativeToolTip": "Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerAirJump.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T14:50:57.879Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "PlayerAttack.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerAttack.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerAttack.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerAttack.cs",
-              "RelativeToolTip": "Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerAttack.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T07:39:57.249Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PlayerBController.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\Character\\Player\\PlayerB\\PlayerBController.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Character\\Player\\PlayerB\\PlayerBController.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\Character\\Player\\PlayerB\\PlayerBController.cs",
-              "RelativeToolTip": "Assets\\Script\\Character\\Player\\PlayerB\\PlayerBController.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T07:02:54.965Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "PlayerStateMachine.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\PlayerStateMachine.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Player State\\PlayerStateMachine.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\PlayerStateMachine.cs",
-              "RelativeToolTip": "Assets\\Script\\State Machine System\\Player State\\PlayerStateMachine.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwB0AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T13:41:47.146Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "PlayerClimbHop.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerClimbHop.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerClimbHop.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerClimbHop.cs",
-              "RelativeToolTip": "Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerClimbHop.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAADwvyQAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T12:18:10.698Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "PlayerClimbSlip.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerClimbSlip.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerClimbSlip.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerClimbSlip.cs",
-              "RelativeToolTip": "Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerClimbSlip.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAwBsAAABuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T14:01:22.693Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "PlayerCoyoteTime.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerCoyoteTime.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerCoyoteTime.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerCoyoteTime.cs",
-              "RelativeToolTip": "Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerCoyoteTime.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAuwBsAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T14:20:06.603Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "PlayerFall.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerFall.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerFall.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerFall.cs",
-              "RelativeToolTip": "Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerFall.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAIwCsAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T14:23:27.839Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "PlayerIdle.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerIdle.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerIdle.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerIdle.cs",
-              "RelativeToolTip": "Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerIdle.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAADwvyIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T14:37:32.9Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "PlayerLand.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerLand.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerLand.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerLand.cs",
-              "RelativeToolTip": "Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerLand.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T04:36:40.63Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "PlayerRun.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerRun.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerRun.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerRun.cs",
-              "RelativeToolTip": "Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerRun.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAgwDAAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T04:20:59.012Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "PlayerWalk.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerWalk.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerWalk.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerWalk.cs",
-              "RelativeToolTip": "Assets\\Script\\State Machine System\\Player State\\The Player State\\PlayerWalk.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAiwB0AAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T14:37:51.889Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "EnemyIdle.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\Normal Enemy\\EnemyIdle.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\Normal Enemy\\EnemyIdle.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\Normal Enemy\\EnemyIdle.cs",
-              "RelativeToolTip": "Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\Normal Enemy\\EnemyIdle.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAADwvwQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T07:13:16.505Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "EnemyPatrol.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\Normal Enemy\\EnemyPatrol.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\Normal Enemy\\EnemyPatrol.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\Normal Enemy\\EnemyPatrol.cs",
-              "RelativeToolTip": "Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\Normal Enemy\\EnemyPatrol.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAwBYAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T08:04:46.846Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "EnemyJumpUp.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\Normal Enemy\\EnemyJumpUp.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\Normal Enemy\\EnemyJumpUp.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\Normal Enemy\\EnemyJumpUp.cs",
-              "RelativeToolTip": "Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\Normal Enemy\\EnemyJumpUp.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAwwB8AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T08:06:07.658Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EnemyJumpUp.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\EnemyJumpUp.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\EnemyJumpUp.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\EnemyJumpUp.cs",
-              "RelativeToolTip": "Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\EnemyJumpUp.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T04:09:01.567Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "EnemyState.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\EnemyState.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Enemy State\\EnemyState.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\EnemyState.cs",
-              "RelativeToolTip": "Assets\\Script\\State Machine System\\Enemy State\\EnemyState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T04:21:58.378Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "StateMachine.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Base\\StateMachine.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Base\\StateMachine.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Base\\StateMachine.cs",
-              "RelativeToolTip": "Assets\\Script\\State Machine System\\Base\\StateMachine.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T14:03:13.54Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "EnemyDie.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\EnemyDie.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\EnemyDie.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\EnemyDie.cs",
-              "RelativeToolTip": "Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\EnemyDie.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T13:01:01.203Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "EnemyHurt.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\EnemyHurt.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\EnemyHurt.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\EnemyHurt.cs",
-              "RelativeToolTip": "Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\EnemyHurt.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T13:00:42.979Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "EnemyAttack.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\EnemyAttack.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\EnemyAttack.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\EnemyAttack.cs",
-              "RelativeToolTip": "Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\EnemyAttack.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T12:47:58.675Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "EnemyIdle.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\EnemyIdle.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\EnemyIdle.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\EnemyIdle.cs",
-              "RelativeToolTip": "Assets\\Script\\State Machine System\\Enemy State\\The Enemy State\\EnemyIdle.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAwBEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T12:43:53.176Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "EnemyStateMachine.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\EnemyStateMachine.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Enemy State\\EnemyStateMachine.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\EnemyStateMachine.cs",
-              "RelativeToolTip": "Assets\\Script\\State Machine System\\Enemy State\\EnemyStateMachine.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T04:22:21.985Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "GroundDetector.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\Character\\Player\\GroundDetector.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Character\\Player\\GroundDetector.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\Character\\Player\\GroundDetector.cs",
-              "RelativeToolTip": "Assets\\Script\\Character\\Player\\GroundDetector.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T04:14:35.275Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "WallDetector.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\Character\\Player\\WallDetector.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Character\\Player\\WallDetector.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\Character\\Player\\WallDetector.cs",
-              "RelativeToolTip": "Assets\\Script\\Character\\Player\\WallDetector.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T04:15:09.46Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "SpellManager.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\PlayerA\\SpellManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\PlayerA\\SpellManager.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\PlayerA\\SpellManager.cs",
-              "RelativeToolTip": "Assets\\Script\\PlayerA\\SpellManager.cs",
+              "DocumentIndex": 4,
+              "Title": "PlayerAInput.cs",
+              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\Input\\PlayerAInput.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Input\\PlayerAInput.cs",
+              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\Input\\PlayerAInput.cs",
+              "RelativeToolTip": "Assets\\Script\\Input\\PlayerAInput.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T14:37:33.635Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-04T05:57:58.682Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "PlayerGroundDetector.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\Character\\Player\\PlayerGroundDetector.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Character\\Player\\PlayerGroundDetector.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\Character\\Player\\PlayerGroundDetector.cs",
-              "RelativeToolTip": "Assets\\Script\\Character\\Player\\PlayerGroundDetector.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "PlayerInput.cs",
+              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\Input\\PlayerInput.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Input\\PlayerInput.cs",
+              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\Input\\PlayerInput.cs",
+              "RelativeToolTip": "Assets\\Script\\Input\\PlayerInput.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAqwBgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T14:41:38.66Z",
+              "WhenOpened": "2025-02-04T04:45:44.331Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "EnemyIdle.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\TheEnemyState\\EnemyIdle.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Enemy State\\TheEnemyState\\EnemyIdle.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\TheEnemyState\\EnemyIdle.cs",
-              "RelativeToolTip": "Assets\\Script\\State Machine System\\Enemy State\\TheEnemyState\\EnemyIdle.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T04:47:28.876Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "EnemyPatrol.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\TheEnemyState\\EnemyPatrol.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Enemy State\\TheEnemyState\\EnemyPatrol.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Enemy State\\TheEnemyState\\EnemyPatrol.cs",
-              "RelativeToolTip": "Assets\\Script\\State Machine System\\Enemy State\\TheEnemyState\\EnemyPatrol.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T07:33:47.692Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IState.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\State Machine System\\Base\\IState.cs",
-              "RelativeDocumentMoniker": "Assets\\State Machine System\\Base\\IState.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\State Machine System\\Base\\IState.cs",
-              "RelativeToolTip": "Assets\\State Machine System\\Base\\IState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T13:49:44.01Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "PlayerController.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\Character\\PlayerController.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Character\\PlayerController.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\Character\\PlayerController.cs",
-              "RelativeToolTip": "Assets\\Script\\Character\\PlayerController.cs",
+              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\Character\\Player\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Character\\Player\\PlayerController.cs",
+              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\Character\\Player\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Script\\Character\\Player\\PlayerController.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAnwCgBAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T03:34:22.942Z",
+              "WhenOpened": "2025-02-04T04:44:50.776Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EffectComponent.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\ProPlatformer\\_Scripts\\Effects\\EffectComponent.cs",
-              "RelativeDocumentMoniker": "Assets\\ProPlatformer\\_Scripts\\Effects\\EffectComponent.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\ProPlatformer\\_Scripts\\Effects\\EffectComponent.cs",
-              "RelativeToolTip": "Assets\\ProPlatformer\\_Scripts\\Effects\\EffectComponent.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T05:21:35.096Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "StateMachine.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\State Machine System\\Base\\StateMachine.cs",
-              "RelativeDocumentMoniker": "Assets\\State Machine System\\Base\\StateMachine.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\State Machine System\\Base\\StateMachine.cs",
-              "RelativeToolTip": "Assets\\State Machine System\\Base\\StateMachine.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T14:01:56.15Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PlayerIdle.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\ThePlayerState\\PlayerIdle.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Player State\\ThePlayerState\\PlayerIdle.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\ThePlayerState\\PlayerIdle.cs",
-              "RelativeToolTip": "Assets\\Script\\State Machine System\\Player State\\ThePlayerState\\PlayerIdle.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T03:42:40.355Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "PlayerGroundDetector.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\Character\\PlayerGroundDetector.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Character\\PlayerGroundDetector.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\Character\\PlayerGroundDetector.cs",
-              "RelativeToolTip": "Assets\\Script\\Character\\PlayerGroundDetector.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvw4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T15:08:30.824Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "PlayerWallDetector.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\Character\\PlayerWallDetector.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Character\\PlayerWallDetector.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\Character\\PlayerWallDetector.cs",
-              "RelativeToolTip": "Assets\\Script\\Character\\PlayerWallDetector.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T15:09:06.644Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "PlayerRun.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\ThePlayerState\\PlayerRun.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\State Machine System\\Player State\\ThePlayerState\\PlayerRun.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\State Machine System\\Player State\\ThePlayerState\\PlayerRun.cs",
-              "RelativeToolTip": "Assets\\Script\\State Machine System\\Player State\\ThePlayerState\\PlayerRun.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T03:46:17.345Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "PlayerRun.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\State Machine System\\Player State\\ThePlayerState\\PlayerRun.cs",
-              "RelativeDocumentMoniker": "Assets\\State Machine System\\Player State\\ThePlayerState\\PlayerRun.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\State Machine System\\Player State\\ThePlayerState\\PlayerRun.cs",
-              "RelativeToolTip": "Assets\\State Machine System\\Player State\\ThePlayerState\\PlayerRun.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T15:51:47.021Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\unity projects\\Platformer\\Assets\\Script\\Manager\\GameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Manager\\GameManager.cs",
-              "ToolTip": "C:\\unity projects\\Platformer\\Assets\\Script\\Manager\\GameManager.cs",
-              "RelativeToolTip": "Assets\\Script\\Manager\\GameManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwkAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T12:32:28.141Z"
             }
           ]
         }

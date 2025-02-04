@@ -60,20 +60,35 @@
     <Analyzer Include="C:\unity\2022.3.44f1c1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\Input\PlayerBInput.cs" />
     <Compile Include="Assets\Script\Character\WallDetector.cs" />
-    <Compile Include="Assets\Script\Input\PlayerAInput.cs" />
+    <Compile Include="Assets\Script\Input\PlayerA\PlayerAInput.cs" />
+    <Compile Include="Assets\Script\Trap\ArrowTrap\Arrow.cs" />
     <Compile Include="Assets\Script\Character\Player\PlayerA\SpellManager.cs" />
+    <Compile Include="Assets\Script\Trap\TrapDoor\TrapDoor_CannotClose.cs" />
     <Compile Include="Assets\Script\Character\CornerDetector.cs" />
     <Compile Include="Assets\Script\Character\Player\PlayerB\Defense.cs" />
+    <Compile Include="Assets\Script\Trap\FragilePlatform\FragilePlatform.cs" />
+    <Compile Include="Assets\Script\Trap\SpikeTrap\SpikeTrap.cs" />
+    <Compile Include="Assets\Script\Trap\SpikeTrap\SpikeTrap_Transmit.cs" />
     <Compile Include="Assets\Script\Character\Player\PlayerB\MeleeAttack.cs" />
+    <Compile Include="Assets\Script\Trap\FragilePlatform\FragilePlatform_OneWay.cs" />
+    <Compile Include="Assets\Script\Trap\Elevator\ElevatorController.cs" />
     <Compile Include="Assets\Script\Character\Player\PlayerController.cs" />
     <Compile Include="Assets\Script\Input\PlayerInput.cs" />
+    <Compile Include="Assets\Script\Trap\ArrowTrap\ArrowTrap.cs" />
+    <Compile Include="Assets\Script\Trap\TrapDoor\TrapDoor_CanClose.cs" />
+    <Compile Include="Assets\Script\Trap\Elevator\Elevator.cs" />
+    <Compile Include="Assets\Script\Trap\TrapDoor\DoorController.cs" />
     <Compile Include="Assets\Script\Audio\SoundEffectsPlayer.cs" />
     <Compile Include="Assets\Script\Input\PlayerInputActions.cs" />
     <Compile Include="Assets\Script\Character\Enemy\EnemyController.cs" />
+    <Compile Include="Assets\Script\Map\Platform_OneWay.cs" />
     <Compile Include="Assets\Script\Character\GroundDetector.cs" />
+    <Compile Include="Assets\Script\Trap\MobilePlatform\MobilePlatformController.cs" />
+    <Compile Include="Assets\Script\Trap\Elevator\ElevatorUnlockController.cs" />
+    <Compile Include="Assets\Script\Input\PlayerB\PlayerBInput.cs" />
     <Compile Include="Assets\Script\Character\HealthController.cs" />
+    <Compile Include="Assets\Script\Trap\MobilePlatform\MobilePlatform.cs" />
     <Compile Include="Assets\Script\Character\Player\PlayerA\Spell.cs" />
     <Compile Include="Assets\Script\Character\Player\PlayerA\Spell\LightBallSpell.cs" />
     <Compile Include="Assets\Script\Character\Player\PlayerB\WeaponSystem.cs" />
